@@ -1,5 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import Profile from "../components/Profile";
+import List from "../components/List";
 
 export default function Layout () {
     return(
@@ -9,11 +10,11 @@ export default function Layout () {
                 <div className="flex flex-col mx-8 mt-4 gap-3">
                     <Profile />
                     <hr className="border-solid border-black my-3"/>
-                    <Link className="py-2 px-4" to={'/'}>To Do List</Link>
+                    <Link className="py-2 px-4" to={'/'}>Home</Link>
                     <Link className="py-2 px-4" to={'/timer'}>Timer</Link>
                     <Link className="py-2 px-4" to={'/complete'}>Complete</Link>
                     <hr className="border-solid border-black my-3"/>
-
+                    <List />
                 </div>
             </article>
             <article className="basis-3/4 overflow-auto">
